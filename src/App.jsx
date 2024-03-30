@@ -12,6 +12,7 @@ import SearchResult from "./pages/searchResult/SearchResult";
 import Explore from "./pages/explore/Explore";
 import PageNotFound from "./pages/404/PageNotFound";
 import SubscriptionPlan from "./pages/subscriptionPlans/SubscriptionPlan";
+import MyList from "./pages/myList/MyList";
 // import Login from "./pages/login/Login";
 // import Register from "./pages/register/Register";
 
@@ -62,6 +63,7 @@ function App() {
         <Route path="/:mediaType/:id" element={<Details />} />
         <Route path="/search/:query" element={<SearchResult />} />
         <Route path="/explore/:mediaType" element={<Explore />} />
+        <Route path="/myList" element={<MyList/>} />
         <Route path="/subscriptionPlan" element={<SubscriptionPlan />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>

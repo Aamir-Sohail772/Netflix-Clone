@@ -7,7 +7,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import {
   MdSubscriptions,
   // MdManageAccounts,
-  // MdFavoriteBorder,
+  MdFavoriteBorder,
 } from "react-icons/md";
 import { AiFillHome, AiOutlineLogout } from "react-icons/ai";
 import ContentWrapper from "../contentWrapper/ContentWrapper";
@@ -82,10 +82,10 @@ const Header = () => {
           <li className="menuItem" onClick={() => navigationHandler("tv")}>
             TV Shows
           </li>
-          {/* <li className="menuItem">
+          <li className="menuItem" onClick={()=> navigate("/MyList")}>
             <MdFavoriteBorder />
             My List
-          </li> */}
+          </li>
           <li
             className="menuItem"
             onClick={() => navigate("/subscriptionPlan")}
