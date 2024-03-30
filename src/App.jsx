@@ -55,7 +55,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-          // After 
+          {/* // After  */}
         {/* <Route path="/login" element={<Login />} /> */}
         {/* <Route path="/register" element={<Register />} /> */}
 
